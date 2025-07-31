@@ -123,10 +123,40 @@
   background: rgba(255, 255, 255, 0.1);
 }
 
+.company-logo.werner {
+  background: rgba(255, 255, 255, 0.1);
+  color: rgba(255, 255, 255, 0.8);
+  font-weight: 600;
+}
+
+.company-logo.schneider {
+  background: rgba(255, 165, 0, 0.2);
+  color: #ffa500;
+  font-weight: 600;
+}
+
 .company-logo.pepsi {
   background: linear-gradient(135deg, #004b93 0%, #e32934 50%, #ffffff 100%);
   color: white;
   font-weight: 700;
+}
+
+.company-logo.fedex {
+  background: rgba(102, 45, 145, 0.2);
+  color: #662d91;
+  font-weight: 700;
+}
+
+.company-logo.robinson {
+  background: rgba(0, 123, 191, 0.2);
+  color: #007bbf;
+  font-weight: 600;
+}
+
+.company-logo.penske {
+  background: rgba(255, 215, 0, 0.2);
+  color: #ffd700;
+  font-weight: 600;
 }
 
 /* Responsive Design */
