@@ -4,9 +4,9 @@
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(255, 255, 255, 0.95);
+  background: rgba(10, 22, 40, 0.95);
   backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid rgba(20, 184, 166, 0.2);
   transition: all 0.3s ease;
 }
 
@@ -29,16 +29,29 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  gap: 0.5rem;
   font-size: 1.5rem;
   font-weight: 700;
 }
 
-.logo-text {
-  color: #1a1a1a;
+.logo-dots {
+  display: flex;
+  gap: 0.25rem;
 }
 
-.logo-accent {
-  color: #3b82f6;
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+}
+
+.dot.red { background: #ef4444; }
+.dot.yellow { background: #f59e0b; }
+.dot.green { background: #10b981; }
+
+.logo-text {
+  color: white;
+  font-weight: 600;
 }
 
 /* Desktop Navigation */
@@ -59,7 +72,7 @@
   padding: 0.75rem 1rem;
   background: none;
   border: none;
-  color: #374151;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 0.95rem;
   font-weight: 500;
   cursor: pointer;
@@ -68,8 +81,8 @@
 }
 
 .nav-link:hover {
-  color: #3b82f6;
-  background: rgba(59, 130, 246, 0.05);
+  color: #14b8a6;
+  background: rgba(20, 184, 166, 0.1);
 }
 
 .chevron {

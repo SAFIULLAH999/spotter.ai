@@ -9,6 +9,16 @@ const Navigation = () => {
 
   const navigationItems = [
     {
+      title: 'Products',
+      items: [
+        { name: 'Lens', href: '/lens', icon: '🔍' },
+        { name: 'TMS', href: '/tms', icon: '📋' },
+        { name: 'Sentinel', href: '/sentinel', icon: '🛡️' },
+        { name: 'Extension', href: '/extension', icon: '🔧' },
+        { name: 'Spotter App', href: '/spotter-app', icon: '📱' }
+      ]
+    },
+    {
       title: 'Solutions',
       items: [
         { name: 'Fleet Management', href: '/fleet-management' },
@@ -18,30 +28,21 @@ const Navigation = () => {
       ]
     },
     {
-      title: 'Products',
+      title: 'Tools',
       items: [
-        { name: 'Spotter AI Platform', href: '/platform' },
-        { name: 'Mobile App', href: '/mobile-app' },
-        { name: 'Dashboard', href: '/dashboard' },
-        { name: 'API Integration', href: '/api' }
-      ]
-    },
-    {
-      title: 'Industries',
-      items: [
-        { name: 'Logistics', href: '/logistics' },
-        { name: 'Transportation', href: '/transportation' },
-        { name: 'Delivery Services', href: '/delivery' },
-        { name: 'Construction', href: '/construction' }
-      ]
-    },
-    {
-      title: 'Resources',
-      items: [
+        { name: 'Loan Calculators', href: '/loan-calculators', icon: '🧮' },
+        { name: 'Insights', href: '/insights', icon: '📊' },
         { name: 'Documentation', href: '/docs' },
-        { name: 'Case Studies', href: '/case-studies' },
-        { name: 'Blog', href: '/blog' },
         { name: 'Support', href: '/support' }
+      ]
+    },
+    {
+      title: 'Company',
+      items: [
+        { name: 'About Us', href: '/about' },
+        { name: 'Careers', href: '/careers' },
+        { name: 'Contact', href: '/contact' },
+        { name: 'Blog', href: '/blog' }
       ]
     }
   ];
@@ -64,8 +65,12 @@ const Navigation = () => {
         {/* Logo */}
         <div className="nav-logo">
           <Link to="/" className="logo-link">
-            <span className="logo-text">Spotter</span>
-            <span className="logo-accent">.ai</span>
+            <div className="logo-dots">
+              <span className="dot red"></span>
+              <span className="dot yellow"></span>
+              <span className="dot green"></span>
+            </div>
+            <span className="logo-text">spotter</span>
           </Link>
         </div>
 
